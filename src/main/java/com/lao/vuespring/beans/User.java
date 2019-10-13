@@ -4,6 +4,15 @@ public class User {
     private Integer id;
     private String username;
     private String password;
+    private int deparmentid;
+
+    public int getDeparmentid() {
+        return deparmentid;
+    }
+
+    public void setDeparmentid(int deparmentid) {
+        this.deparmentid = deparmentid;
+    }
 
     public Integer getId() {
         return id;
@@ -28,6 +37,8 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+
 
     @Override
     public String toString() {
