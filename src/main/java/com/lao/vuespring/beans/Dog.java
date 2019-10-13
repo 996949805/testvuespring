@@ -9,7 +9,9 @@ public class Dog {
         return name;
     }
 
-    public void setName(String name) {
+    public Dog(String name, int age, float weight) {
         this.name = name;
+        this.age = age;
+        this.weight = weight;
     }
 }
