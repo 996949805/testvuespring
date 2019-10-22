@@ -14,5 +14,7 @@ public class MyWebConfig implements WebMvcConfigurer {
                 .allowedOrigins("*")
                 .allowedMethods("*")
                 .allowedHeaders("*");
+
+
     }
 }
