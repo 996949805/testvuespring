@@ -41,8 +41,10 @@ public class LoginController {
         //User user = userService.get(username, requestUser.getPassword());
         com.lao.vuespring.beans.User user = userMapper.getUserByUsername(username);
         if (null == user) {
+            System.out.println("reject login");
             return new Result(400);
         } else {
+            System.out.println("login successfully");
             return new Result(200);
         }
     }

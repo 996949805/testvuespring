@@ -16,19 +16,13 @@ public class UserController {
     @Autowired
     UserMapper userMapper;
 
-
     @ResponseBody
-    @RequestMapping(value = "/postuser",method = RequestMethod.POST)
-    public User postUser(@RequestBody User user, HttpServletRequest request){
-//    public User postUser(){
-        System.out.println("sssssssssss");
+    @RequestMapping(value = "/postuser")
+    public User postUser(User user){
         System.out.println(user);
-        System.out.println(request);
         User u = userMapper.getUserByUsername(user.getUsername());
         System.out.println(u);
         return u;
-//return null;
-
     }
 
     @ResponseBody
